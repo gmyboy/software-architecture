@@ -1,44 +1,76 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T12:17:57.392Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="a43-pzmnDk0SGseqlrEK" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-14T12:25:05.221Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="b_ZbinSxvFwBRJgt5aBU" version="17.4.3" type="github">
   <diagram id="RjEBWgmEhPWUuhU1YD3c" name="第 1 页">
     <mxGraphModel dx="1022" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-8" value="接受授权请求?倒计时30s" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
-          <mxGeometry x="600" y="160" width="160" height="80" as="geometry" />
+          <mxGeometry x="350" y="240" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-9" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-8" target="4ChpsgzNAY7_XG8OOZH5-11">
-          <mxGeometry x="-0.8333" y="20" relative="1" as="geometry">
+          <mxGeometry x="-0.8095" y="-20" relative="1" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="700" y="600" as="sourcePoint" />
-            <mxPoint x="610" y="800" as="targetPoint" />
+            <mxPoint x="450" y="690" as="sourcePoint" />
+            <mxPoint x="360" y="890" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="490" y="200" />
+              <mxPoint x="230" y="280" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4ChpsgzNAY7_XG8OOZH5-10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-8">
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-8" target="4ChpsgzNAY7_XG8OOZH5-15">
           <mxGeometry x="-0.6154" y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="690" y="510" as="sourcePoint" />
-            <mxPoint x="680" y="345" as="targetPoint" />
-            <Array as="points" />
+            <mxPoint x="350" y="370" as="sourcePoint" />
+            <mxPoint x="540" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="360" />
+              <mxPoint x="430" y="360" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-11" value="放弃授权" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="420" y="345" width="120" height="40" as="geometry" />
+          <mxGeometry x="160" y="380" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=8;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-13" target="4ChpsgzNAY7_XG8OOZH5-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-13" value="调用request_token接口发起授权请求,随后开启轮询定时调用get_token" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="610" y="30" width="140" height="60" as="geometry" />
+          <mxGeometry x="360" y="120" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-14" value="deviceId" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="90" width="60" height="30" as="geometry" />
+          <mxGeometry x="370" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-16" value="开始" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-17" value="结束" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="480" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-18" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-15" target="4ChpsgzNAY7_XG8OOZH5-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="429" y="430" as="sourcePoint" />
+            <mxPoint x="429" y="480" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-19" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-16" target="4ChpsgzNAY7_XG8OOZH5-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="80" as="sourcePoint" />
+            <mxPoint x="400" y="130" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4ChpsgzNAY7_XG8OOZH5-15" value="授权成功,生成token" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="345" width="120" height="40" as="geometry" />
+          <mxGeometry x="360" y="380" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4ChpsgzNAY7_XG8OOZH5-21" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="4ChpsgzNAY7_XG8OOZH5-11" target="4ChpsgzNAY7_XG8OOZH5-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="229.5" y="440" as="sourcePoint" />
+            <mxPoint x="229.5" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="450" />
+              <mxPoint x="430" y="450" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
